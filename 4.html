@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="3" style="width: 100%;" >
+        <tr style="background-color: antiquewhite;" >
+            <th><h2>OBJECT</h2></th>
+            <th><h2>PROPERTY</h2></th>
+            <th><h2>METHOD</h2></th>
+        </tr>
+        <tr>
+            <th rowspan="5"><img src="./7043877c-d66d-40e8-83ba-10c2f64a9619_43.jpeg" height="100"></th>
+           <th id="1"></th>
+           <th id="2"></th>
+        </tr>
+        <tr>
+           
+           <th id="3"></th>
+           <th id="4"></th>
+        </tr>
+        <tr>
+           
+            <th id="5"></th>
+            <th id="6"></th>
+         </tr>
+         <tr>
+           
+            <th id="7"></th>
+            <th id="8"></th>
+         </tr>
+         <tr>
+           
+            <th id="9"></th>
+            <th id="10"></th>
+         </tr>
+        <tr>
+            <th>
+            </th>
+        </tr>
+      </table>
+    <script>
+        var hp = {type :"13",
+                  merk :"Iphone",
+                  harga :"20.000.000",
+                  RAM :"8/180",
+                  MaH :"7000",
+      start : function(){
+        document.getElementById("2").innerHTML="Menyalakan";
+    },
+   drive : function(){
+    document.getElementById("4").innerHTML="Panggilan dilakukan";
+   },
+   break : function(){
+    document.getElementById("6").innerHTML="sms berhasil dikirim";
+   },
+   s : function(){
+    document.getElementById("8").innerHTML="logout";
+   },
+   stop : function(){
+    document.getElementById("10").innerHTML="Handphone Mati";
+   }
+
+              };
+              document.getElementById("1").innerHTML="Type   :"+hp.type;
+              document.getElementById("3").innerHTML="Merk   :"+hp.merk;
+              document.getElementById("5").innerHTML="Harga   :"+hp.harga;
+              document.getElementById("7").innerHTML="RAM    :"+hp.RAM;
+              document.getElementById("9").innerHTML="MaH   :"+hp.MaH;
+              document.getElementById("2").innerHTML=hp.type;
+            hp.start();
+            document.getElementById("4").innerHTML=hp.merk;
+            hp.drive();
+            document.getElementById("6").innerHTML=hp.harga;
+            hp.break();
+            document.getElementById("8").innerHTML=hp.RAM;
+            hp.s();
+            document.getElementById("10").innerHTML=hp.MaH;
+            hp.stop();
+    </script>
+</body>
+</html>

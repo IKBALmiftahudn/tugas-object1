@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="3" style="width: 100%;" >
+        <tr style="background-color: antiquewhite;" >
+            <th><h2>OBJECT</h2></th>
+            <th><h2>PROPERTY</h2></th>
+            <th><h2>METHOD</h2></th>
+        </tr>
+        <tr>
+            <th rowspan="5"><img src="./download.jpg" height="100"></th>
+           <th id="1"></th>
+           <th id="2"></th>
+        </tr>
+        <tr>
+           
+           <th id="3"></th>
+           <th id="4"></th>
+        </tr>
+        <tr>
+           
+            <th id="5"></th>
+            <th id="6"></th>
+         </tr>
+         <tr>
+           
+            <th id="7"></th>
+            <th id="8"></th>
+         </tr>
+         <tr>
+           
+            <th id="9"></th>
+            <th id="10"></th>
+         </tr>
+        <tr>
+            <th>
+            </th>
+        </tr>
+      </table>
+      <script>
+          var leskuker = {type :"Philips",
+                  warna :"hitam",
+                  harga :"1.000.000",
+                  Berat :"2 Kg",
+                  Kapasitas :"4 Kg",
+    on : function(){
+        document.getElementById("2").innerHTML="Menyalakan";
+    },
+   memunculkan : function(){
+    document.getElementById("4").innerHTML="Memunculkan Uap";
+   },
+   menyimpan : function(){
+    document.getElementById("6").innerHTML="Menyimpan";
+   },
+   memanaskan : function(){
+    document.getElementById("8").innerHTML="memanaskan";
+   },
+   mematikan : function(){
+    document.getElementById("10").innerHTML="mematikan";
+   }
+                };
+                document.getElementById("1").innerHTML="Type   :"+leskuker.type;
+              document.getElementById("3").innerHTML="warna   :"+leskuker.warna;
+              document.getElementById("5").innerHTML="Harga   :"+leskuker.harga;
+              document.getElementById("7").innerHTML="Berat    :"+leskuker.Berat
+              document.getElementById("9").innerHTML="Kapasitas   :"+leskuker.Kapasitas;
+              document.getElementById("2").innerHTML=leskuker.type;
+            leskuker.on();
+            document.getElementById("4").innerHTML=leskuker.warna;
+            leskuker.memunculkan();
+            document.getElementById("6").innerHTML=leskuker.harga;
+            leskuker.menyimpan();
+            document.getElementById("8").innerHTML=leskuker.Berat
+            leskuker.memanaskan();
+            document.getElementById("10").innerHTML=leskuker.Kapasitas;
+            leskuker.mematikan();
+      </script>
+</body>
+</html>

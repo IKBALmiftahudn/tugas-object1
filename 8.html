@@ -1,0 +1,85 @@
+<!DOCJenis html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="3" style="width: 100%;" >
+        <tr style="background-color: antiquewhite;" >
+            <th><h2>OBJECT</h2></th>
+            <th><h2>PROPERTY</h2></th>
+            <th><h2>METHOD</h2></th>
+        </tr>
+        <tr>
+            <th rowspan="5"><img src="./2863847810.jpg" height="100"></th>
+           <th id="1"></th>
+           <th id="2"></th>
+        </tr>
+        <tr>
+           
+           <th id="3"></th>
+           <th id="4"></th>
+        </tr>
+        <tr>
+           
+            <th id="5"></th>
+            <th id="6"></th>
+         </tr>
+         <tr>
+           
+            <th id="7"></th>
+            <th id="8"></th>
+         </tr>
+         <tr>
+           
+            <th id="9"></th>
+            <th id="10"></th>
+         </tr>
+        <tr>
+            <th>
+            </th>
+        </tr>
+      </table>
+      <script>
+          var gagak = { Jenis:"Daikin",
+                  warna :"hitam",
+                  Berat :"5 Kg",
+                  Model :"Jawa",
+                  ukuran :"3o cm",
+   Hidup : function(){
+        document.getElementById("2").innerHTML="Hidup";
+    },
+   Terbang : function(){
+    document.getElementById("4").innerHTML="Terbang";
+   },
+   Makan : function(){
+    document.getElementById("6").innerHTML="Makan ";
+   },
+    Minum: function(){
+    document.getElementById("8").innerHTML="Minum";
+   },
+   Menyerang : function(){
+    document.getElementById("10").innerHTML="Menyerang";
+   }
+                };
+                document.getElementById("1").innerHTML="Jenis   :"+gagak.Jenis;
+              document.getElementById("3").innerHTML="warna   :"+gagak.warna;
+              document.getElementById("5").innerHTML="Berat   :"+gagak.Berat;
+              document.getElementById("7").innerHTML="Model    :"+gagak.Model
+              document.getElementById("9").innerHTML="Ukuran   :"+gagak.ukuran;
+              document.getElementById("2").innerHTML=gagak.Jenis;
+            gagak.Hidup();
+            document.getElementById("4").innerHTML=gagak.warna;
+            gagak.Terbang();
+            document.getElementById("6").innerHTML=gagak.Berat;
+            gagak.Makan();
+            document.getElementById("8").innerHTML=gagak.Model;
+            gagak.Minum();
+            document.getElementById("10").innerHTML=gagak.ukuran;
+            gagak.Menyerang();
+      </script>
+</body>
+</html>
